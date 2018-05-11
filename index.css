@@ -1,49 +1,30 @@
 html {
   color: #c0c0c0;
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: Courier, Courier, monospace;
   text-align: center;
+  font-family: Courier, Courier, monospace;
+  /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 body {
   background-color: #2f3e56;
 }
-/*
-h1 {
-  text-align: center;
-  color: #c0c0c0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  color: #c0c0c0;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-label {
-  color: #c0c0c0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-*/
 
 slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 50%; /* Width of the outside container */
 }
 
 
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 50%; /* Full-width */
     height: 15px;
     border-radius: 5px;
-    background: #d3d3d3; /* Grey background */
+    background: #c0c0c0; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 1; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
-    background-color: #c0c0c0;
 }
 
 /* Mouse-over effects */
@@ -67,4 +48,59 @@ slidecontainer {
     height: 25px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
+}
+
+
+#buttons div:first-of-type {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+#buttons label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+#buttons input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+#buttons input:checked {
+  border: 6px solid black;
+}
+
+#buttons button,
+#buttons legend {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+#buttons button:hover,
+#buttons button:focus {
+  color: #999;
+}
+
+#buttons button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
 }
