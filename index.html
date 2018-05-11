@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Light Controller</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <h1>This text is temporary</h1>
+
+
+    <div class="slidecontainer">
+      <input type="range" min="0" max="255" value="127" class="slider" id="range1">
+      <p>Value: <span id="slider1"></span></p>
+    </div>
+    <script>
+      var slider = document.getElementById("range1");
+      var output = document.getElementById("slider1");
+      output.innerHTML = slider.value; // Display the default slider value
+      // Update the current slider value (each time you drag the slider handle)
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+
+    <div class="slidecontainer">
+      <input type="range" min="0" max="255" value="127" class="slider" id="range2">
+      <p>Value: <span id="slider2"></span></p>
+    </div>
+    <script>
+      var slider = document.getElementById("range2");
+      var output = document.getElementById("slider2");
+      output.innerHTML = slider.value; // Display the default slider value
+      // Update the current slider value (each time you drag the slider handle)
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+
+    <div id="buttons">
+      <br>
+      <input type="radio" id="mode1" name="mode" value="m1" checked>
+      <label for="mod1">Mode 1</label>
+      <br>
+      <input type="radio" id="mode2" name="mode" value="m2">
+      <label for="mode2">Mode 2</label>
+      <br>
+      <input type="radio" id="mode3" name="mode" value="m3">
+      <label for="mode3">Mode 3</label>
+      <br>
+    </div>
+
+
+  </body>
+</html>
