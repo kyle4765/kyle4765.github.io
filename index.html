@@ -4,8 +4,8 @@
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    <h1>Text goes here</h1>
 
+    <h1>Text goes here</h1>
 
     <div class="slidecontainer">
       <input type="range" min="0" max="255" value="127" class="slider" id="range1">
@@ -13,11 +13,11 @@
     </div>
     <script>
       var slider = document.getElementById("range1");
-      var output = document.getElementById("slider1");
-      output.innerHTML = slider.value; // Display the default slider value
+      var output1 = document.getElementById("slider1");
+      output1.innerHTML = slider.value; // Display the default slider value
       // Update the current slider value (each time you drag the slider handle)
       slider.oninput = function() {
-        output.innerHTML = this.value;
+        output1.innerHTML = this.value;
       }
     </script>
 
@@ -27,11 +27,11 @@
     </div>
     <script>
       var slider = document.getElementById("range2");
-      var output = document.getElementById("slider2");
-      output.innerHTML = slider.value; // Display the default slider value
+      var output2 = document.getElementById("slider2");
+      output2.innerHTML = slider.value; // Display the default slider value
       // Update the current slider value (each time you drag the slider handle)
       slider.oninput = function() {
-        output.innerHTML = this.value;
+        output2.innerHTML = this.value;
       }
     </script>
 
@@ -41,11 +41,11 @@
     </div>
     <script>
       var slider = document.getElementById("range3");
-      var output = document.getElementById("slider3");
-      output.innerHTML = slider.value; // Display the default slider value
+      var output3 = document.getElementById("slider3");
+      output3.innerHTML = slider.value; // Display the default slider value
       // Update the current slider value (each time you drag the slider handle)
       slider.oninput = function() {
-        output.innerHTML = this.value;
+        output3.innerHTML = this.value;
       }
     </script>
 
@@ -61,7 +61,6 @@
       <label for="mode3">Mode 3</label>
       <br>
     </div>
-
 
   </body>
 </html>
